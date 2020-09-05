@@ -1,0 +1,1171 @@
+<html>
+<head>
+  <title>Aframe - Kinkakuji Temple</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
+</head>
+<body>
+<a-scene>
+  <a-entity camera="active: true" look-controls wasd-controls="acceleration: 1000" position="0 15 50"></a-entity>
+  <a-assets>
+    <img id="wood" src="https://i.imgur.com/31Sm4AV.png">
+    <img id="wood2" src="https://i.imgur.com/G7mtF20.jpg%22%3E">
+    <img id="wood3" src="https://i.imgur.com/26gnyGL.png">
+    <img id="wood4" src="https://i.imgur.com/6X4SIoJ.png">
+    <img id="wood5" src="https://i.imgur.com/LFphZqk.png">
+    <img id="wood6" src="https://i.imgur.com/gyiYO8T.png">
+    <img id="wood7" src="https://i.imgur.com/TYdFxaJ.png">
+    <img id="roof" src="https://i.imgur.com/SmriVHG.png%22%3E">
+    <img id="wood8" src="https://i.imgur.com/19HQEOp.png">
+    <img id="wood9" src="https://i.imgur.com/ASnY1Ux.png">
+  </a-assets>
+  <a-sky color="hsl(35, 100%, 80%)"></a-sky>
+
+  <!--light-->
+  <a-entity light="type: ambient; intensity: 0.6; color: hsl(35, 70%, 90%)"></a-entity>
+  <a-entity light="type: directional; castShadow: true; intensity: 0.8; shadowCameraVisible: false; shadowCameraRight: 100; shadowCameraBottom: -20; shadowCameraLeft: -100; shadowCameraTop: 50; color: hsl(35, 85%, 90%)" position="0 10 50"></a-entity>
+
+  <!-- ทั้งหมด -->
+  <a-entity shadow="receive: true">
+  <!-- ศาลาทอง -->
+  <a-entity>
+    <a-box width="25" depth="25" position="0 0 -10"></a-box>
+
+    <!---พื้น--->
+    <a-entity rotation="0 90 0" position="10 0 -10">
+      <a-plane width="5" height="25" src="#wood" position="0 0.53 -10"rotation="-90 0 0"></a-plane>
+      <a-plane width="5" height="25" src="#wood" position="-5 0.53 -10"rotation="-90 0 0"></a-plane>
+      <a-plane width="5" height="25" src="#wood" position="-10 0.53 -10"rotation="-90 0 0"></a-plane>
+      <a-plane width="5" height="25" src="#wood" position="5 0.53 -10"rotation="-90 0 0"></a-plane>
+      <a-plane width="5" height="25" src="#wood" position="10 0.53 -10"rotation="-90 0 0"></a-plane>
+    </a-entity>
+    <!---พื้น--->
+
+    <!---ศาลา--->
+    <a-entity>
+    <a-box src="#wood" width="4" depth="10" height="0.1" position="-17.5 0.47 -8" rotation="0 90 0"></a-box>
+    <a-box width="8.5" depth="0.1" height="0.7" position="-18.2 0.8 -5.99" src="#wood2"></a-box>
+    <a-box width="8.5" depth="0.1" height="0.7" position="-18.2 0.8 -9.99" src="#wood2"></a-box>
+    <a-box width="0.1" depth="4" height="0.7" position="-22.5 0.8 -8" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="7" position="-22.5 2.5 -6" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="7" position="-22.5 2.5 -10" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="7" position="-14 2.5 -6" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="7" position="-14 2.5 -10" src="#wood2"></a-box>
+    <a-box width="0.1" depth="0.3" height="1.5" position="-22.5 1.5 -9.7" src="#wood2"></a-box>
+    <a-box width="0.1" depth="0.3" height="1.5" position="-22.5 1.5 -8w" src="#wood2"></a-box>
+    <a-box width="0.1" depth="0.3" height="1.5" position="-22.5 1.5 -6.3" src="#wood2"></a-box>
+    <a-box width="0.1" depth="4" height="0.3" position="-22.5 2 -8" src="#wood2"></a-box>
+    <a-box width="8.5" depth="0.3" height="0.3" position="-18.2 5.5 -10" src="#wood2"></a-box>
+    <a-box width="8.5" depth="0.3" height="0.3" position="-18.2 5.5 -6" src="#wood2"></a-box>
+    <a-box width="0.3" depth="4" height="0.3" position="-22.5 5 -8" src="#wood2"></a-box>
+    <a-box width="9" depth="5" height="0.3" position="-18.2 6 -6" src="#wood2" rotation="30 0 0"></a-box>
+    <a-box width="9" depth="5" height="0.3" position="-18.2 6 -10" src="#wood2" rotation="-30 0 0"></a-box>
+    </a-entity>
+    <!---ศาลา--->
+
+     <!-- รั้ว -->
+    <a-entity position="-12.35 1.25 2.35">
+      <!-- รั้วหน้า -->
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="0 0 0"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="2.5 0 0"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="5 0 0"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="7.5 0 0"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="10 0 0"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="12.5 0 0"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="15 0 0"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="17.5 0 0"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="20 0 0"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="22.5 0 0"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="24.7 0 0"></a-box>
+      <a-box src="#wood2" width="25" height="0.3" depth="0.3" position="12.35 0.61 0.001"></a-box>
+      <a-box src="#wood2" width="25" height="0.1" depth="0.1" position="12.35 0.05 0.001"></a-box>
+      <a-box src="#wood2" width="25" height="0.1" depth="0.1" position="12.35 -0.25 0.001"></a-box>
+
+      <!-- รั้วขวา -->
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="24.7 0 -2.5"></a-box>
+      <a-box src="#wood2" width="0.3" height="0.3" depth="2.5" position="24.701 0.601 -1.251"></a-box>
+      <a-box src="#wood2" width="0.3" height="0.1" depth="2.5" position="24.701 0.05 -1.251"></a-box>
+      <a-box src="#wood2" width="0.3" height="0.1" depth="2.5" position="24.701 -0.25 -1.251"></a-box>
+
+      <!-- รั้วซ้าย(ติดศาลา) ด้านหน้า -->
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="0 0 -2.5"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="0 0 -5"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="0 0 -8.4"></a-box>
+      <a-box src="#wood2" width="0.3" height="0.3" depth="8.4" position="0.001 0.601 -4.2"></a-box>
+      <a-box src="#wood2" width="0.3" height="0.1" depth="8.4" position="0.001 0.05 -4.2"></a-box>
+      <a-box src="#wood2" width="0.3" height="0.1" depth="8.4" position="0.001 -0.25 -4.2"></a-box>
+
+      <!-- รั้วเชื่อมศาลา ด้านหน้า-->
+      <a-box src="#wood2" width="1.5" height="0.3" depth="0.3" position="-0.75 0.61 -8.4"></a-box>
+      <a-box src="#wood2" width="1.5" height="0.1" depth="0.3" position="-0.75 0.05 -8.4"></a-box>
+      <a-box src="#wood2" width="1.5" height="0.1" depth="0.3" position="-0.75 -0.25 -8.4"></a-box>
+      <!-- รั้วเชื่อมศาลา ด้านหลัง-->
+      <a-box src="#wood2" width="1.5" height="0.3" depth="0.3" position="-0.75 0.61 -12.3"></a-box>
+      <a-box src="#wood2" width="1.5" height="0.1" depth="0.3" position="-0.75 0.05 -12.3"></a-box>
+      <a-box src="#wood2" width="1.5" height="0.1" depth="0.3" position="-0.75 -0.25 -12.3"></a-box>
+
+      <!-- รั้วซ้าย(ติดศาลา) ด้านหลัง -->
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="0 0 -24.7"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="0 0 -22.2"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="0 0 -19.7"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="0 0 -17.2"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="0 0 -14.7"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="0 0 -12.3"></a-box>
+      <a-box src="#wood2" width="0.3" height="0.3" depth="12.4" position="0.001 0.601 -18.5"></a-box>
+      <a-box src="#wood2" width="0.3" height="0.1" depth="12.4" position="0.001 0.05 -18.5"></a-box>
+      <a-box src="#wood2" width="0.3" height="0.1" depth="12.4" position="0.001 -0.25 -18.5"></a-box>
+
+      <!-- รั้วด้านหลัง -->
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="2.5 0 -24.7"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="5 0 -24.7"></a-box>
+      <a-box src="#wood2" width="0.3" height="1.5" depth="0.3" position="7.5 0 -24.7"></a-box>
+
+      <a-box src="#wood2" width="7.5" height="0.3" depth="0.3" position="3.75 0.61 -24.7"></a-box>
+      <a-box src="#wood2" width="7.5" height="0.1" depth="0.3" position="3.75 0.05 -24.7"></a-box>
+      <a-box src="#wood2" width="7.5" height="0.1" depth="0.3" position="3.75 -0.25 -24.7"></a-box>
+    </a-entity>
+  <!-- รั้วด้านหน้า+ขวา+ซ้าย -->
+
+    <!--ชั้นหนึ่ง -->
+    <!--ซ้าย -->
+    <a-box position="-8 3 -12" color="#e3e3e3" height="6" width="0.1" depth="12"></a-box>
+    <a-box position="-8 2.5 -8" src="https://i.imgur.com/2kwXeRK.png" height="4" width="0.2" depth="4"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-8 3 -10" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-8 3 -6" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-8 3 -14" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-8 3 -18" src="#wood2"></a-box>
+    <a-box width="0.3" depth="16.3" height="0.3" position="-8 4.5 -10" src="#wood2"></a-box>
+    <a-box width="0.3" depth="16.3" height="0.3" position="-8 5.3 -10" src="#wood2"></a-box>
+    <a-box width="0.3" depth="16.3" height="0.3" position="-8 6 -10" src="#wood2"></a-box>
+    <a-box width="0.1" depth="4" height="1.5" position="-8 5.3 -4" color="#e3e3e3"></a-box>
+    <a-box width="0.1" depth="0.1" height="1.5" position="-8 5.3 -4" color="#e3e3e3"></a-box>
+    <!--หน้า -->
+    <a-box width="4" depth="0.3" height="2" position="-5.8 1.5 -6" src="#wood3"></a-box>
+    <a-box width="4" depth="0.3" height="2" position="-1.8 1.5 -6" src="#wood3"></a-box>
+    <a-box width="4" depth="0.3" height="2" position="1.8 1.5 -6" src="#wood3"></a-box>
+    <a-box width="4" depth="0.3" height="2" position="5.8 1.5 -6" src="#wood3"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-4 3 -6" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="8 3 -6" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-8 3 -2" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-4 3 -2" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="0 3 -6" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="4 3 -6" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="8 3 -2" src="#wood2"></a-box>
+    <a-box width="16.3" depth="0.3" height="0.3" position="0 6 -2" src="#wood2"></a-box>
+    <a-box width="16.3" depth="0.3" height="0.3" position="0 5.3 -2" src="#wood2"></a-box>
+    <a-box width="16" depth="0.1" height="0.5" position="0 5.7 -2" color="#e3e3e3"></a-box>
+    <!---ขวา -->
+    <a-box position="8 3 -12" color="#e3e3e3" height="6" width="0.1" depth="12"></a-box>
+    <a-box position="8 2.5 -8" src="https://i.imgur.com/2kwXeRK.png" height="4" width="0.2" depth="4"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="8 3 -10" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="8 3 -6" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="8 3 -14" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="8 3 -18" src="#wood2"></a-box>
+    <a-box width="0.3" depth="16.3" height="0.3" position="8 4.5 -10" src="#wood2"></a-box>
+    <a-box width="0.3" depth="16.3" height="0.3" position="8 5.3 -10" src="#wood2"></a-box>
+    <a-box width="0.3" depth="16.3" height="0.3" position="8 6 -10" src="#wood2"></a-box>
+    <a-box width="0.1" depth="4" height="1.5" position="8 5.3 -4" color="#e3e3e3"></a-box>
+    <a-box width="0.1" depth="0.1" height="1.5" position="8 5.3 -4" color="#e3e3e3"></a-box>
+    <!--หลัง -->
+    <a-box position="0 3 -18" width="16" height="6" depth="0.1" color="#e3e3e3"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-4 3 -18" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="0 3 -18" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="4 3 -18" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-2 3 -18" src="#wood2"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-6 3 -18" src="#wood2"></a-box>
+    <a-box width="16.3" depth="0.3" height="0.3" position="0 6 -18" src="#wood2"></a-box>
+    <a-box width="16.3" depth="0.3" height="0.3" position="0 5.3 -18" src="#wood2"></a-box>
+    <a-box width="16.3" depth="0.3" height="0.3" position="0 4.5 -18" src="#wood2"></a-box>
+    <!--ชั้นหนึ่ง -->
+
+    <!--ชั้นสอง -->
+    <!-- รั้วชั้นสอง -->
+    <a-entity position="-12.35 7.5 2.35">
+      <!-- รั้วหน้า -->
+      <a-entity>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="0 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="3 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="6 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="9 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="12 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="15 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="18 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="21.35 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="24.7 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="1.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="4.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="7.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="10.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="13.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="16.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="19.675 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="23.025 -0.25 0"></a-box>
+
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.3" depth="0.3" position="12.35 0.61 0.001"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.15" depth="0.1" position="12.35 0.05 0.001"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.3" depth="0.3" position="12.35 -0.6 0.001"></a-box>
+      </a-entity>
+      <!-- รั้วหลัง -->
+      <a-entity position="0 0 -24.7">
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="0 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="3 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="6 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="9 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="12 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="15 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="18 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="21.35 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="24.7 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="1.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="4.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="7.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="10.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="13.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="16.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="19.675 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="23.025 -0.25 0"></a-box>
+
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.3" depth="0.3" position="12.35 0.61 0.001"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.15" depth="0.1" position="12.35 0.05 0.001"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.3" depth="0.3" position="12.35 -0.6 0.001"></a-box>
+      </a-entity>
+
+      <!-- รั้วซ้าย -->
+      <a-entity position="0 0 -24.7" rotation="0 -90 0">
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="0 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="3 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="6 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="9 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="12 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="15 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="18 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="21.35 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="24.7 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="1.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="4.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="7.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="10.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="13.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="16.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="19.675 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="23.025 -0.25 0"></a-box>
+
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.3" depth="0.3" position="12.35 0.61 0.001"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.15" depth="0.1" position="12.35 0.05 0.001"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.3" depth="0.3" position="12.35 -0.6 0.001"></a-box>
+      </a-entity>
+
+      <!-- รั้วขวา -->
+      <a-entity position="24.7 0 -24.7" rotation="0 -90 0">
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="0 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="3 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="6 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="9 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="12 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="15 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="18 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="21.35 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="1.5" depth="0.3" position="24.7 0 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="1.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="4.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="7.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="10.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="13.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="16.5 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="19.675 -0.25 0"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="0.3" height="0.5" depth="0.1" position="23.025 -0.25 0"></a-box>
+
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.3" depth="0.3" position="12.35 0.61 0.001"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.15" depth="0.1" position="12.35 0.05 0.001"></a-box>
+        <a-box color="hsl(51, 70%, 50%)" width="25" height="0.3" depth="0.3" position="12.35 -0.6 0.001"></a-box>
+      </a-entity>
+    </a-entity>
+
+    <!--พื้น -->
+    <a-box width="5" depth="25" height="0.5" position="0 6.5 -20" src="#wood" rotation="0 90 0"></a-box>
+    <a-box width="5" depth="25" height="0.5" position="0 6.5 -15" src="#wood" rotation="0 90 0"></a-box>
+    <a-box width="5" depth="25" height="0.5" position="0 6.5 -10" src="#wood" rotation="0 90 0"></a-box>
+    <a-box width="5" depth="25" height="0.5" position="0 6.5 -5" src="#wood" rotation="0 90 0"></a-box>
+    <a-box width="5" depth="25" height="0.5" position="0 6.5 0" src="#wood" rotation="0 90 0"></a-box>
+    <!--ซ้าย -->
+    <a-box position="-8 9.5 -12" src="#wood4" height="6" width="0.1" depth="12"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-8 9.5 -10" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-8 9.5 -6" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-8 9.5 -14" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-8 9.5 -18" src="#wood5"></a-box>
+    <!--หน้า -->
+    <a-box width="4" depth="0.1" height="6" position="-6 9.5 -6" src="#wood4"></a-box>
+    <a-box width="4" depth="0.1" height="6" position="-2 9.5 -6" src="#wood4"></a-box>
+    <a-box width="4" depth="0.1" height="6" position="2 9.5 -6" src="#wood4"></a-box>
+    <a-box width="4" depth="0.2" height="4" position="-6 8.7 -6" src="#wood6"></a-box>
+    <a-box width="4" depth="0.2" height="4" position="2 8.7 -6" src="#wood6"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-8 9.5 -2" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-4 9.5 -2" src="#wood5"></a-box>
+    <a-box width="0.1" depth="4" height="6" position="4 9.5 -4" src="#wood4"></a-box>
+    <a-box width="4" depth="0.1" height="6" position="6 9.5 -2" src="#wood7"></a-box>
+    <!--ขวา -->
+    <a-box position="8 9.5 -12" src="#wood4" height="6" width="0.1" depth="12"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="8 9.5 -10" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="8 9.5 -6" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="8 9.5 -14" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="8 9.5 -18" src="#wood5"></a-box>
+    <a-box width="0.1" depth="4" height="6" position="8 9.5 -4" src="#wood4"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="4 9.5 -6" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="4 9.5 -2" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="8 9.5 -2" src="#wood5"></a-box>
+    <!--หลัง -->
+    <a-box width="16" depth="0.1" height="6" position="0 9.5 -18ไ" src="#wood4"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="0 9.5 -18" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-4 9.5 -18" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="-2 9.5 -18" src="#wood5"></a-box>
+    <a-box width="0.3" depth="0.3" height="6" position="4 9.5 -18" src="#wood5"></a-box>
+
+    <!-- หลังคาชั้นสอง -->
+    <a-box color="hsl(51, 40%, 50%)" width="29" depth="29" height="0.1" position="0 12.55 -10"></a-box>
+    <a-box src="#roof" width="29" depth="29" height="0.15" position="0 12.7 -10"></a-box>
+    <a-box src="#roof" width="28" depth="28" height="0.15" position="0 12.85 -10"></a-box>
+    <a-box src="#roof" width="27" depth="27" height="0.15" position="0 13 -10"></a-box>
+    <a-box src="#roof" width="26" depth="26" height="0.15" position="0 13.15 -10"></a-box>
+    <a-box src="#roof" width="25" depth="25" height="0.15" position="0 13.30 -10"></a-box>
+    <a-box src="#roof" width="24" depth="24" height="0.15" position="0 13.45 -10"></a-box>
+    <a-box src="#roof" width="23" depth="23" height="0.15" position="0 13.60 -10"></a-box>
+    <a-box src="#roof" width="22" depth="22" height="0.15" position="0 13.75 -10"></a-box>
+    <a-box src="#roof" width="21" depth="21" height="0.15" position="0 13.90 -10"></a-box>
+    <a-box src="#wood" width="20" depth="20" height="0.15" position="0 14.05 -10"></a-box>
+    <!--หลังคาชั้นสอง -->
+
+    <!--ชั้นสอง -->
+
+    <!--ชั้นสาม -->
+    <!-- รั้วชั้นสาม -->
+    <a-entity position="-9.85 14.9 -0.15">
+      <!-- รั้วหน้า -->
+      <a-entity>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="2" depth="0.3" position="0 0.25 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="2.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="7.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="10 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="12.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="15 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="17.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="2" depth="0.3" position="19.7 0.25 0"></a-box>
+
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.5" depth="0.3" position="9.85 -0.5 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.15" depth="0.3" position="9.85 0.15 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.15" depth="0.3" position="9.85 0.7 0"></a-box>
+      </a-entity>
+
+      <!-- รั้วหลัง -->
+      <a-entity position="0 0 -19.7">
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="2" depth="0.3" position="0 0.25 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="2.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="7.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="10 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="12.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="15 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="17.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="2" depth="0.3" position="19.7 0.25 0"></a-box>
+
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.5" depth="0.3" position="9.85 -0.5 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.15" depth="0.3" position="9.85 0.15 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.15" depth="0.3" position="9.85 0.7 0"></a-box>
+      </a-entity>
+
+      <!-- รั้วซ้าย -->
+      <a-entity rotation="0 90 0">
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="2" depth="0.3" position="0 0.25 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="2.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="7.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="10 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="12.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="15 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="17.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="2" depth="0.3" position="19.7 0.25 0"></a-box>
+
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.5" depth="0.3" position="9.85 -0.5 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.15" depth="0.3" position="9.85 0.15 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.15" depth="0.3" position="9.85 0.7 0"></a-box>
+      </a-entity>
+
+      <!-- รั้วขวา -->
+      <a-entity rotation="0 90 0" position="19.7 0 0">
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="2" depth="0.3" position="0 0.25 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="2.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="7.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="10 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="12.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="15 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="1.5" depth="0.3" position="17.5 0 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="0.3" height="2" depth="0.3" position="19.7 0.25 0"></a-box>
+
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.5" depth="0.3" position="9.85 -0.5 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.15" depth="0.3" position="9.85 0.15 0"></a-box>
+        <a-box color="hsl(51, 60%, 50%)" width="20" height="0.15" depth="0.3" position="9.85 0.7 0"></a-box>
+      </a-entity>
+    </a-entity>
+    <a-box position="0 17 -4" src="#wood9" width="4" height="6" depth="0.1"></a-box>
+    <a-box position="-4 17 -4" src="#wood8" width="4" height="6" depth="0.1"></a-box>
+    <a-box position="4 17 -4" src="#wood8" width="4" height="6" depth="0.1"></a-box>
+    <a-box position="0 17 -16" src="#wood9" width="4" height="6" depth="0.1"></a-box>
+    <a-box position="-4 17 -16" src="#wood8" width="4" height="6" depth="0.1"></a-box>
+    <a-box position="4 17 -16" src="#wood8" width="4" height="6" depth="0.1"></a-box>
+    <a-box position="6 17 -14" src="#wood8" width="0.1" height="6" depth="4"></a-box>
+    <a-box position="6 17 -10" src="#wood8" width="0.1" height="6" depth="4"></a-box>
+    <a-box position="6 17 -6" src="#wood8" width="0.1" height="6" depth="4"></a-box>
+    <a-box position="-6 17 -14" src="#wood8" width="0.1" height="6" depth="4"></a-box>
+    <a-box position="-6 17 -10" src="#wood8" width="0.1" height="6" depth="4"></a-box>
+    <a-box position="-6 17 -6" src="#wood8" width="0.1" height="6" depth="4"></a-box>
+    <a-box position="-6 17 -4" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+    <a-box position="-2 17 -4" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+    <a-box position="2 17 -4" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+    <a-box position="6 17 -4" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+    <a-box position="-6 17 -8" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+    <a-box position="-6 17 -12" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+    <a-box position="-6 17 -16" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+    <a-box position="-2 17 -16" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+    <a-box position="2 17 -16" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+    <a-box position="6 17 -16" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+    <a-box position="6 17 -12" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+    <a-box position="6 17 -8" src="#wood5" width="0.3" height="6" depth="0.3"></a-box>
+
+    <!-- หลังคาชั้นสาม -->
+    <a-entity position="0 20.15 -10">
+      <a-box position="0 -0.125 0" color="hsl(51, 40%, 50%)" width="22" height="0.1" depth="22"></a-box>
+      <a-box position="0 0 0" src="#roof" width="22" height="0.15" depth="22"></a-box>
+      <a-box position="0 0.15 0" src="#roof" width="21" height="0.15" depth="21"></a-box>
+      <a-box position="0 0.3 0" src="#roof" width="20" height="0.15" depth="20"></a-box>
+      <a-box position="0 0.45 0" src="#roof" width="19" height="0.15" depth="19"></a-box>
+      <a-box position="0 0.6 0" src="#roof" width="18" height="0.15" depth="18"></a-box>
+      <a-box position="0 0.75 0" src="#roof" width="17" height="0.15" depth="17"></a-box>
+      <a-box position="0 0.9 0" src="#roof" width="16" height="0.15" depth="16"></a-box>
+      <a-box position="0 1.05 0" src="#roof" width="15" height="0.15" depth="15"></a-box>
+
+      <a-box position="0 1.225 0" src="#roof" width="14" height="0.175" depth="14"></a-box>
+      <a-box position="0 1.425 0" src="#roof" width="13" height="0.2" depth="13"></a-box>
+      <a-box position="0 1.65 0" src="#roof" width="12" height="0.225" depth="12"></a-box>
+      <a-box position="0 1.9 0" src="#roof" width="11" height="0.25" depth="11"></a-box>
+      <a-box position="0 2.175 0" src="#roof" width="10" height="0.275" depth="10"></a-box>
+      <a-box position="0 2.475 0" src="#roof" width="9" height="0.3" depth="9"></a-box>
+      <a-box position="0 2.8 0" src="#roof" width="8" height="0.325" depth="8"></a-box>
+      <a-box position="0 3.15 0" src="#roof" width="7" height="0.35" depth="7"></a-box>
+      <a-box position="0 3.525 0" src="#roof" width="6" height="0.375" depth="6"></a-box>
+      <a-box position="0 3.925 0" src="#roof" width="5" height="0.4" depth="5"></a-box>
+      <a-box position="0 4.35 0" src="#roof" width="4" height="0.425" depth="4"></a-box>
+
+      <a-box position="0 4.8 0" color="hsl(51, 50%, 50%)" width="3" height="0.45" depth="3"></a-box>
+      <a-box position="0 5.3 0" color="hsl(51, 50%, 50%)" width="2" height="0.5" depth="2"></a-box>
+    </a-entity>
+    <!--ชั้นสาม -->
+    <!--ไม้ใต้วัด-->
+    <a-cylinder src="#wood3"  height="5" radius="0.75" rotation="-90 0 -90" position="-9.5 -0.5 3"></a-cylinder>
+    <a-cylinder src="#wood3" height="5" radius="0.75" rotation="-90 0 -90" position="-3.5 -0.5 3"></a-cylinder>
+    <a-cylinder src="#wood3" height="5" radius="0.75" rotation="-90 0 -90" position="3 -0.5 3"></a-cylinder>
+    <a-cylinder src="#wood3" height="5" radius="0.75" rotation="-90 0 -90" position="9 -0.5 3"></a-cylinder>
+
+    <a-cylinder src="#wood3" height="5" radius="0.75" rotation="-90 0 0" position="-12.5 -0.5 -1"></a-cylinder>
+    <a-cylinder src="#wood3" height="5" radius="0.75" rotation="-90 0 0" position="-12.5 -0.5 -7"></a-cylinder>
+    <a-cylinder src="#wood3" height="5" radius="0.75" rotation="-90 0 0" position="-12.5 -0.5 -13"></a-cylinder>
+    <a-cylinder src="#wood3" height="5" radius="0.75" rotation="-90 0 0" position="-12.5 -0.5 -19"></a-cylinder>
+
+    <a-cylinder src="#wood3" height="5" radius="0.75" rotation="-90 0 0" position="12.5 -0.5 -1"></a-cylinder>
+    <a-cylinder src="#wood3" height="5" radius="0.75" rotation="-90 0 0" position="12.5 -0.5 -7"></a-cylinder>
+    <a-cylinder src="#wood3" height="5" radius="0.75" rotation="-90 0 0" position="12.5 -0.5 -13"></a-cylinder>
+    <a-cylinder src="#wood3" height="5" radius="0.75" rotation="-90 0 0" position="12.5 -0.5 -19"></a-cylinder>
+  </a-entity>
+
+<!--แม่น้ำ-->
+  <a-box width="100" height="100"  src="https://4.bp.blogspot.com/-uVycnIDSEzI/W9r3G82Q84I/AAAAAAAAOvM/nuBxgXFLtVMf9qSWNvcVsD0Z2Z3w-BwagCLcBGAs/w1200-h630-p-k-no-nu/SKEPTA%2B-%2BPURE%2BWATER-ART.jpeg" position="0 -51 37"rotation="-90 0 0" depth="100"></a-box>
+  <a-entity id="ocean" ocean="density: 20; width: 100; depth: 100; speed: 4"
+                material="color: #9CE3F9; opacity: 0.75; metalness: 0; roughness: 1"
+                rotation="-90 0 0" position="0 -0.2 37"></a-entity>
+  <a-sphere position="-10 -1.5 40" radius="2" color="#5e5a5a" shadow></a-sphere>
+  <a-sphere position="10 -2 50" radius="2" color="#3d3a3a" shadow></a-sphere>
+
+ <!--เกาะกลางใหญ่-->
+  <a-sphere position="-10 -5 25" radius="7" color="#7E641F" shadow></a-sphere>
+  <a-sphere position="-15 -6 24" radius="8" color="#7E641F" shadow></a-sphere>
+  <a-sphere position="-7 -6 24" radius="7"color="#7E641F" shadow></a-sphere>
+  <a-sphere position="-20 -5 24" radius="7"color="#7E641F" shadow></a-sphere>
+  <a-sphere position="-5 -6 24" radius="7"color="#7E641F" shadow></a-sphere>
+  <a-sphere position="0 -3 24" radius="3"color="#7E641F" shadow></a-sphere>
+
+  <a-sphere position="-19 0 25" radius="3" color="#565656" shadow></a-sphere>
+  <a-sphere position="-15 -1.5 28" radius="3" color="#b2adad" shadow></a-sphere>
+  <a-sphere position="-10 0 28" radius="2" color="#787878" shadow></a-sphere>
+  <a-sphere position="-10 -1 30" radius="1" color="#3d3a3a" shadow></a-sphere>
+  <a-sphere position="-18 -2 30" radius="2" color="#3d3a3a" shadow></a-sphere>
+
+  <!--ผลไม้-->
+  <a-sphere position="-18 8 22" radius="0.25" color="#ea6f6f" shadow></a-sphere>
+  <a-sphere position="-18 8 25" radius="0.25" color="#e13838" shadow></a-sphere>
+  <a-sphere position="-14 8 25" radius="0.25" color="#e13838" shadow></a-sphere>
+  <a-sphere position="-11.75 8 25" radius="0.25" color="#ea6f6f" shadow></a-sphere>
+  <a-sphere position="-10 8 26.75" radius="0.25" color="#e13838" shadow></a-sphere>
+  <a-sphere position="-10 6 26" radius="0.25" color="#ea6f6f" ashadow></a-sphere>
+  <a-sphere position="-9 10.75 25" radius="0.25" color="#e13838" shadow></a-sphere>
+  <a-sphere position="-7 8 28.5" radius="0.25" color="#f58e13" shadow></a-sphere>
+  <a-sphere position="-5 8 28.5" radius="0.25" color="#f58e13" shadow></a-sphere>
+  <a-sphere position="-2 6 29" radius="0.25" color="#f58e13" shadow></a-sphere>
+
+
+
+
+
+  <a-entity position="-27 0 -13">
+    <a-cylinder position="22 0 40"height="12" radius="0.5" src="#wood2"></a-cylinder>
+  <a-cylinder position="21 6 40"height="3" radius="0.4" rotation="0 0 45" src="#wood2"></a-cylinder>
+  <a-cylinder position="23 5 41"height="3" radius="0.4" rotation="45 45 0" src="#wood2"></a-cylinder>
+  <a-sphere position="24 6 41" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="20 8 40" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="23 7 41" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="23 7 40" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="22 9 40" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="21 0 40" radius="0.5" color="#6D6B6B" shadow></a-sphere>
+  <a-sphere position="22 0.2 41" radius="0.5" color="#b2adad" shadow></a-sphere>
+   </a-entity>
+  <a-cylinder position="-7 0 24"height="12" radius="0.5" src="#wood2"></a-cylinder>
+  <a-cylinder position="-8 6 24"height="3" radius="0.5" src="#wood2" rotation="0 0 45"></a-cylinder>
+  <a-sphere position="-9 8 24" radius="3" color="#349149" shadow></a-sphere>
+  <a-cylinder position="-15 0 24"height="12" radius="0.5" src="#wood2"></a-cylinder>
+  <a-cylinder position="-16 6 24"height="3" radius="0.5" src="#wood2" rotation="0 0 45"></a-cylinder>
+  <a-cylinder position="-15 6 23"height="3" radius="0.5" src="#wood2" rotation="-45 0 0"></a-cylinder>
+  <a-sphere position="-15 8 22" radius="2" color="#99f163" shadow></a-sphere>
+  <a-sphere position="-17 8.5 23.5" radius="2" color="#6acd2e" shadow></a-sphere>
+  <a-sphere position="-15 8.5 23.5" radius="2" color="#b7f094" shadow></a-sphere>
+
+
+
+
+
+
+  <!--เกาะกลางเล็ก-->
+  <a-sphere position="20 -6 40" radius="6" color="#7E641F" shadow></a-sphere>
+  <!--ต้นไม้ซ้าย-->
+  <a-cylinder position="19 0 40"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="19 3 40.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="18 3 40"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+  <a-sphere position="17 4 40" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="20 4 40" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="18 4 41" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="18.5 4 41" radius="0.5" color="3CAF17" shadow></a-sphere>
+  <a-sphere position="19s 4 41.5" radius="1" color="#87EA23" shadow></a-sphere>
+   <a-sphere position="18 4 39" radius="1.5" color="#3CAF17" shadow></a-sphere>
+  <!--ผลไม้-->
+   <a-sphere position="18 4 42" radius="0.25" color="#be0000" shadow></a-sphere>
+  <a-sphere position="19.75 4 42" radius="0.25" color="#be0000" shadow></a-sphere>
+
+  <a-box position="20 -1 43" width="1" height="3" color="#929292" roatation="0 0 -45"></a-box>
+
+  <!--ต้นขวา-->
+  <a-cylinder position="22 0 40"height="12" radius="0.5" src="#wood2"></a-cylinder>
+  <a-cylinder position="21 6 40"height="3" radius="0.4" rotation="0 0 45" src="#wood2"></a-cylinder>
+  <a-cylinder position="23 5 41"height="3" radius="0.4" rotation="45 45 0" src="#wood2"></a-cylinder>
+  <a-sphere position="24 6 41" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="20 8 40" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="23 7 41" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="23 7 40" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="22 9 40" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="21 0 40" radius="0.5" color="#6D6B6B" shadow></a-sphere>
+  <a-sphere position="22 0.2 41" radius="0.5" color="#6D6B6B" shadow></a-sphere>
+  <a-sphere position="18 -0.5 41" radius="0.5" color="#6D6B6B" shadow></a-sphere>
+  <!--ผลไม้-->
+  <a-sphere position="20 8 41.5" radius="0.25" color="#ffc900" shadow></a-sphere>
+  <a-sphere position="19.75 7 41" radius="0.25" color="#ffc900" shadow></a-sphere>
+  <a-sphere position="23 7 42.5" radius="0.25" color="#ffc900" shadow></a-sphere>
+  <a-sphere position="25 6 42" radius="0.25" color="#ffc900" shadow></a-sphere>
+  <!--ดินป่า-->
+  <a-box width="100" height="48" depth="100" color="#7E641F" position="0 -50.5 -37"rotation="-90 0 0"></a-box>
+  <!--ป่า-->
+    <!--1ต้น-->
+  <a-entity position="19 0 -29">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+
+     </a-entity>
+  <a-entity position="-30 0 -35">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-10 0 -35">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-40 0 -20">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-35 0 -15">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-30 0 -20">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-25 0 -15">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="35 0 -20">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+<a-entity position="45 0 -15">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+<a-entity position="25 0 -15">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="30 0 -26">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+    <!--ต้นใหญ่-->
+  <a-entity position="43 0 -29">
+  <a-cylinder position="0 0 0"height="12" radius="0.5" src="#wood2"></a-cylinder>
+  <a-cylinder position="-1 6 0"height="3" radius="0.4" rotation="0 0 45" src="#wood2"></a-cylinder>
+  <a-cylinder position="1 5 0"height="3" radius="0.4" rotation="45 45 0" src="#wood2"></a-cylinder>
+  <a-sphere position="2 6 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-2 8 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="0 9 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+
+  <a-entity position="-30 0 -20">
+  <a-cylinder position="0 0 0"height="12" radius="0.5" src="#wood2"></a-cylinder>
+  <a-cylinder position="-1 6 0"height="3" radius="0.4" rotation="0 0 45" src="#wood2"></a-cylinder>
+  <a-cylinder position="1 5 0"height="3" radius="0.4" rotation="45 45 0" src="#wood2"></a-cylinder>
+  <a-sphere position="2 6 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-2 8 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="0 9 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+
+  <a-entity position="45 0 -15">
+  <a-cylinder position="0 0 0"height="12" radius="0.5" src="#wood2"></a-cylinder>
+  <a-cylinder position="-1 6 0"height="3" radius="0.4" rotation="0 0 45" src="#wood2"></a-cylinder>
+  <a-cylinder position="1 5 0"height="3" radius="0.4" rotation="45 45 0" src="#wood2"></a-cylinder>
+  <a-sphere position="2 6 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-2 8 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="0 9 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+
+  <a-entity position="-45 0 -15">
+  <a-cylinder position="0 0 0"height="12" radius="0.5" src="#wood2"></a-cylinder>
+  <a-cylinder position="-1 6 0"height="3" radius="0.4" rotation="0 0 45" src="#wood2"></a-cylinder>
+  <a-cylinder position="1 5 0"height="3" radius="0.4" rotation="45 45 0" src="#wood2"></a-cylinder>
+  <a-sphere position="2 6 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-2 8 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="0 9 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+<!--ต้นใหญ่-->
+  <a-entity position="2 0 -29">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-20 0 -25">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-15 0 -32">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-20 20 -60">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-25 18 -50">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-12 13 -43">
+  <a-cylinder position="0 0 0"height="12" radius="0.5" src="#wood2"></a-cylinder>
+  <a-cylinder position="-1 6 0"height="3" radius="0.4" rotation="0 0 45" src="#wood2"></a-cylinder>
+  <a-cylinder position="1 5 0"height="3" radius="0.4" rotation="45 45 0" src="#wood2"></a-cylinder>
+  <a-sphere position="2 6 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-2 8 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="0 9 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+
+  <a-entity position="-26 12 -40">
+  <a-cylinder position="0 0 0"height="12" radius="0.5" src="#wood2"></a-cylinder>
+  <a-cylinder position="-1 6 0"height="3" radius="0.4" rotation="0 0 45" src="#wood2"></a-cylinder>
+  <a-cylinder position="1 5 0"height="3" radius="0.4" rotation="45 45 0" src="#wood2"></a-cylinder>
+  <a-sphere position="2 6 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-2 8 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="0 9 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+
+  <a-entity position="-45 0 -43">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-39 0 -33">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-45 0 -25">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+     </a-entity>
+
+  <a-entity position="-39 0 -33">
+  <a-cylinder position="0 0 0"height="12" radius="0.5" src="#wood2"></a-cylinder>
+  <a-cylinder position="-1 6 0"height="3" radius="0.4" rotation="0 0 45" src="#wood2"></a-cylinder>
+  <a-cylinder position="1 5 0"height="3" radius="0.4" rotation="45 45 0" src="#wood2"></a-cylinder>
+  <a-sphere position="2 6 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-2 8 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 7 1" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="0 9 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+
+  <a-entity position="45 0 -45">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+
+  <a-entity position="38 0 -35">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+
+  <a-entity position="20 20 -60">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+
+  <a-entity position="26 18 -50">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+
+  <a-entity position="45 0 -45">
+  <a-cylinder position="0 0 0"height="5" radius="0.4" src="#wood2"></a-cylinder>
+  <a-cylinder position="0 3 0.5"height="2" radius="0.2" src="#wood2" rotation="45 0 0"></a-cylinder>
+  <a-cylinder position="-1 3 0"height="2" radius="0.2" src="#wood2" rotation="0 0 45"></a-cylinder>
+    <a-sphere position="-2 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="1 4 0" radius="1.5" color="#4C9008" shadow></a-sphere>
+  <a-sphere position="-1 4 1" radius="1" color="#78D916" shadow></a-sphere>
+  <a-sphere position="-0.5 4 1" radius="0.5" color="green" shadow></a-sphere>
+  <a-sphere position="0 4 1.5" radius="1" color="#87EA23" shadow></a-sphere>
+    <a-sphere position="-1 4 -1" radius="1.5" color="#4C9008" shadow></a-sphere>
+    </a-entity>
+
+ <!--ภูเขา-->
+    <a-sphere position="20 -5 -60" radius="25" color="#003300" shadow></a-sphere>
+    <a-sphere position="-20 -5 -60" radius="25" color="#003300" shadow></a-sphere>
+
+  <!--ก้อนหินขวางทาง-->
+  <a-sphere position="49 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="46 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="43 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="40 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="37 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="34 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="31 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="28 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="25 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="22 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="19 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="16 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="15 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+
+  <a-sphere position="-15 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="-18 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="-21 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="-24 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="-27 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="-30 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="-33 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="-36 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="-39 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="-42 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="-45 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <a-sphere position="-48 0 -13" radius="1.5" color="gray" shadow></a-sphere>
+  <!--ทางเดิน-->
+  <a-plane width="40" height="5" color="gray" position="-20 -0.49 -28"rotation="-90 0 0"></a-plane>
+  <a-plane width="5" height="11" color="gray" position="-2 -0.49 -25"rotation="-90 0 0"></a-plane>
+  <a-cylinder position="-40 -1.249 -28"height="1.5" radius="2.5" color="gray" rotation="0 0 0"></a-cylinder>
+  <a-plane width="5" height="11" color="gray" position="-44 -0.49 -32"rotation="-90 45 0"></a-plane>
+
+   <!--ก้อนเมฆ-->
+
+  <a-entity position="-14 20 -7" rotation="0 0 0"animation="property:position;
+  to:-2 20 -7;
+  dur:6000;
+  loop:true;
+  dir:alternate;
+  easing:linear;
+  ">
+<a-box position="-14 20 -7" rotation="90 0 0"color="white" width="3px" height="3px" metalness="0.1" roughness="0.1"></a-box>
+</a-entity>
+
+<a-entity position="-14 22 -7" rotation="0 0 0"animation="property:position;
+  to:1 22 -7;
+  dur:9000;
+  loop:true;
+  dir:alternate;
+  easing:linear;
+  ">
+<a-box position="-14 22 -7" rotation="90 0 0"color="white" width="3px" height="7px"></a-box>
+</a-entity>
+
+<a-entity position="-16 22 -1" rotation="0 0 0"animation="property:position;
+  to:2 22 -1;
+  dur:9000;
+  loop:true;
+  dir:alternate;
+  easing:linear;
+  ">
+<a-box position="-17 20 -7" rotation="90 0 0"color="white" width="4px" height="5px"></a-box>
+</a-entity>
+
+<a-entity position="-9 22 -7" rotation="0 0 0"animation="property:position;
+  to:3 22 -7;
+  dur:6000;
+  loop:true;
+  dir:alternate;
+  easing:linear;
+  ">
+<a-box position="-4 20 0.5" rotation="90 0 0"color="white" width="5px" height="5px"></a-box>
+<a-box position="-1 20 2" rotation="90 0 0"color="white" width="3px" height="8px"></a-box>
+<a-box position="2 20 -3" rotation="90 0 0"color="white" width="6px" height="5px"></a-box>
+</a-entity>
+
+<a-entity position="4 24 -7" rotation="0 0 0"animation="property:position;
+  to:16 24 -7;
+  dur:7000;
+  loop:true;
+  dir:alternate;
+  easing:linear;
+  ">
+<a-box position="9 20 -8" rotation="90 0 0"color="white" width="4px" height="4px"></a-box>
+</a-entity>
+
+<a-entity position="8 22 -7" rotation="0 0 0"animation="property:position;
+  to:-7 22 -7;
+  dur:7000;
+  loop:true;
+  dir:alternate;
+  easing:linear;
+  ">
+<a-box position="12 20 1" rotation="90 0 0"color="white" width="5px" height="5px"></a-box>
+</a-entity>
+
+<a-entity position="13 22 -7" rotation="0 0 0"animation="property:position;
+  to:-8 22 -7;
+  dur:7000;
+  loop:true;
+  dir:alternate;
+  easing:linear;
+  ">
+<a-box position="-2 22 -14" rotation="90 0 0"color="white" width="5px" height="3px"></a-box>
+</a-entity>
+
+<a-entity position="-16 22 -7" rotation="0 0 0"animation="property:position;
+  to:19 22 -7;
+  dur:7000;
+  loop:true;
+  dir:alternate;
+  easing:linear;
+  ">
+<a-box position="12 20 -22" rotation="90 0 0"color="white" width="5px" height="5px"></a-box>
+</a-entity>
+
+<a-entity position="19 22 -7" rotation="0 0 0"animation="property:position;
+  to:5 22 -7;
+  dur:7000;
+  loop:true;
+  dir:alternate;
+  easing:linear;
+  ">
+<a-box position="-12 20 -20" rotation="90 0 0"color="white" width="5px" height="3px"></a-box>
+</a-entity>
+
+<a-entity position="5 22 -7" rotation="0 0 0"animation="property:position;
+  to:-10 22 -7;
+  dur:8000;
+  loop:true;
+  dir:alternate;
+  easing:linear;
+  ">
+<a-box position="17 20 -10" rotation="90 0 0"color="white" width="5px" height="6px"></a-box>
+</a-entity>
+
+<a-entity position="15 22 -7" rotation="0 0 0"animation="property:position;
+  to:-12 22 -7;
+  dur:5000;
+  loop:true;
+  dir:alternate;
+  easing:linear;
+  ">
+<a-box position="2 22 -28" rotation="90 0 0"color="white" width="5px" height="5px"></a-box>
+</a-entity>
+
+<!--Sun-->
+<a-sphere position="0 5 130" radius="10" color="#FD321E"></a-sphere>
+
+
+<a-entity position="19 5 -1" rotation="0 0 0"animation="property:position;
+  to:-16 5 5;
+  dur:12000;
+  loop:true;
+  easing:linear;
+  ">
+<a-box position="19 30 -50" rotation="90 90 0" color="#730F05" width="0.4"  depth="0.3" height="0.7"></a-box>
+
+<a-box position="19 30 -50" rotation="90 90 0" color="#730F05" width="0.4" depth="0.3"
+height="0.7"></a-box>
+<a-box position="18.9 30 -50.3" rotation="-90 -20 0" color="#730F05" width="0.4"  depth="0.05" height="0.5"></a-box>
+<a-box position="18.9 30 -49.7" rotation="90 20 0" color="#730F05" width="0.4"  depth="0.05" height="0.5"></a-box>
+<a-box position="18.55 29.98 -50" rotation="90 90 0" color="white" width="0.20"  depth="0.25" height="0.5"></a-box>
+<a-box position="18.35 29.95 -50" rotation="90 90 0" color="FD7104" width="0.15"  depth="0.05" height="0.4"></a-box>
+<a-box position="19.40 30.10 -50" rotation="50 90 0" color="#330000" width="0.3"  depth="0.05" height="0.4"></a-box>
+</a-entity>
+
+
+<a-entity position="22 2 1" rotation="0 0 0"animation="property:position;
+  to:-40 -10 10;
+  dur:12000;
+  loop:true;
+  easing:linear;
+  ">
+<a-box position="19 30 -50" rotation="90 90 0" color="#730F05" width="0.4"  depth="0.3" height="0.7"></a-box>
+<a-box position="19 30 -50" rotation="90 90 0" color="#730F05" width="0.4" depth="0.3" height="0.7"></a-box>
+<a-box position="18.9 30 -50.3" rotation="-90 -20 0" color="#730F05" width="0.4"  depth="0.05" height="0.5"></a-box>
+<a-box position="18.9 30 -49.7" rotation="90 20 0" color="#730F05" width="0.4"  depth="0.05" height="0.5"></a-box>
+<a-box position="18.55 29.98 -50" rotation="90 90 0" color="white" width="0.20"  depth="0.25" height="0.5"></a-box>
+<a-box position="18.35 29.95 -50" rotation="90 90 0" color="FD7104" width="0.15"  depth="0.05" height="0.4"></a-box>
+<a-box position="19.40 30.10 -50" rotation="50 90 0" color="#330000" width="0.3"  depth="0.05" height="0.4"></a-box>
+</a-entity>
+
+<a-entity position="15 -5 5" rotation="0 0 0"animation="property:position;
+  to:-19 5 5;
+  dur:12000;
+  loop:true;
+  easing:linear;
+  ">
+<a-box position="19 30 -50" rotation="90 90 0" color="#730F05" width="0.4"  depth="0.3" height="0.7"></a-box>
+<a-box position="19 30 -50" rotation="90 90 0" color="#730F05" width="0.4" depth="0.3"
+height="0.7"></a-box>
+<a-box position="18.9 30 -50.3" rotation="-90 -20 0" color="#730F05" width="0.4"  depth="0.05" height="0.5"></a-box>
+<a-box position="18.9 30 -49.7" rotation="90 20 0" color="#730F05" width="0.4"  depth="0.05" height="0.5"></a-box>
+<a-box position="18.55 29.98 -50" rotation="90 90 0" color="white" width="0.20"  depth="0.25" height="0.5"></a-box>
+<a-box position="18.35 29.95 -50" rotation="90 90 0" color="FD7104" width="0.15"  depth="0.05" height="0.4"></a-box>
+<a-box position="19.40 30.10 -50" rotation="50 90 0" color="#330000" width="0.3"  depth="0.05" height="0.4"></a-box>
+</a-entity>
+<a-entity position="30 -1 2" rotation="0 0 0"animation="property:position;
+  to:-20 5 5;
+  dur:12000;
+  loop:true;
+  easing:linear;
+  "        >
+<a-box position="19 30 -50" rotation="90 90 0" color="#730F05" width="0.4"  depth="0.3" height="0.7"></a-box>
+<a-box position="19 30 -50" rotation="90 90 0" color="#730F05" width="0.4" depth="0.3"
+height="0.7"></a-box>
+<a-box position="18.9 30 -50.3" rotation="-90 -20 0" color="#730F05" width="0.4"  depth="0.05" height="0.5"></a-box>
+<a-box position="18.9 30 -49.7" rotation="90 20 0" color="#730F05" width="0.4"  depth="0.05" height="0.5"></a-box>
+<a-box position="18.55 29.98 -50" rotation="90 90 0" color="white" width="0.20"  depth="0.25" height="0.5"></a-box>
+<a-box position="18.35 29.95 -50" rotation="90 90 0" color="FD7104" width="0.15"  depth="0.05" height="0.4"></a-box>
+<a-box position="19.40 30.10 -50" rotation="50 90 0" color="#330000" width="0.3"  depth="0.05" height="0.4"></a-box>
+</a-entity>
+</a-entity>
+</a-scene>
+</body>
+</html>
