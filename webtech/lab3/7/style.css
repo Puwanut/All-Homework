@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  align-items: center;
+  height: 94vh;
+}
+
+.container {
+  padding: 25px;
+  font-family: "Mitr", sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.box {
+  margin: 15px;
+  background-color: #ffffff;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  height: 300px;
+  word-wrap: break-word;
+  overflow: auto;
+}

@@ -1,0 +1,25 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #DDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+}
+
+.container {
+    margin: auto;
+    width: 750px;
+}
+
+.box {
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    padding: 0px 15px;
+    display: inline-block;
+    overflow: auto;
+    background-color: white;
+}
+
+

@@ -1,0 +1,12 @@
+body {
+    background-image: url(bg.jpg);
+    font-family: 'Mitr', sans-serif;
+}
+
+.container {
+    background-color: rgba(255,255,255,0.8);
+    padding: 25px;
+    margin: 50px;
+    border-radius: 20px;
+    font-family: 'Mitr', sans-serif;
+}

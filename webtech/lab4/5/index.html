@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4-5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="javascript.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container pt-4">
+
+        <div class="row pl-4">
+            <img src="img/musicIcon.jpg" width="50px" alt="Music icon">
+            <h1 class="pl-3"><b>Music</b></h1>
+        </div>
+        <hr>
+
+        <div class="row m-4">
+
+            <div class="col-md-5" id="playlist">
+
+                <div class="row" id="instruction">
+                    <div class="col box m-2">
+                        Click <b style="border: 1px solid gray; padding: 4px 10px; border-radius: 5px;">+</b> add to
+                        your playlist
+                    </div>
+                </div>
+
+                <hr class="mt-2 mb-4">
+
+            </div>
+
+            <div class="col-md-7">
+                <div class="card mb-3" id="music1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="card-img" height="100%" src="img/music1.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 id="musicName1">Spark Again</h4>
+                                <p class="artist" id="artist1">Aimer</p>
+                                <p class="musicDetail">Fire Force Season 2 Opening Song</p>
+                                <button type="button" onclick="addToPlaylist(1)"
+                                    class="btn btn-outline-dark mt-3"><b>+</b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" id="music2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="card-img" height="100%" src="img/music2.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 id="musicName2">Happy End</h4>
+                                <p class="artist" id="artist2">Back Number</p>
+                                <p class="musicDetail">Ost.Tomorrow I will date with yesterday's you</p>
+                                <button type="button" onclick="addToPlaylist(2)"
+                                    class="btn btn-outline-dark mt-3"><b>+</b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" id="music3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="card-img" height="100%" src="img/music3.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 id="musicName3">No.1</h4>
+                                <p class="artist" id="artist3">Kana Nishino</p>
+                                <p class="musicDetail">Cover by Kobasolo & Lefty Hand Cream</p>
+                                <button type="button" onclick="addToPlaylist(3)"
+                                    class="btn btn-outline-dark mt-3"><b>+</b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" id="music4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="card-img" height="100%" src="img/music4.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 id="musicName4">Unlasting</h4>
+                                <p class="artist" id="artist4">LiSA</p>
+                                <p class="musicDetail">Sword Art Online: Alicization - War of Underworld Ending</p>
+                                <button type="button" onclick="addToPlaylist(4)"
+                                    class="btn btn-outline-dark mt-3"><b>+</b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

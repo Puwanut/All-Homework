@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4-6</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="javascript.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container pt-4">
+        <h1 class="text-center">- Question -</h1>
+
+        <div class="box">
+            <h4>What's your name ?</h4>
+            <button id="q1" class="btn btn-outline-primary" onclick="replyThis(1)">reply</button>
+            <p id="ans1"></p>
+            <h4>How old are you ?</h4>
+            <button id="q2" class="btn btn-outline-primary" onclick="replyThis(2)">reply</button>
+            <p id="ans2"></p>
+            <h4>What's your favourite hobby ?</h4>
+            <button id="q3" class="btn btn-outline-primary" onclick="replyThis(3)">reply</button>
+            <p id="ans3"></p>
+
+
+        </div>
+
+
+        <div class="mt-3">
+            <input class="form-control" id="message" placeholder="Enter your reply message">
+            <button class="btn btn-warning mt-2" onclick="sendReply()">Send reply message</button>
+        </div>
+    </div>
+</body>
+
+</html>

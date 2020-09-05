@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab3-7</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mitr&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javascript.js" type="text/javascript"></script>
+  </head>
+
+  <body style="background-color: hsl(0, 0%, 10%)">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-3 box">
+          <div class="row header p-2">
+            <h5 style="margin: 0">Date: 27/08/2020</h5>
+          </div>
+          <div class="row message p-3">
+            <h5>เครือข่าย (Network)</h5>
+            <p>
+              เครือข่ายคอมพิวเตอร์ หรือ คอมพิวเตอร์เน็ตเวิร์ก (computer network)
+              คือ ระบบการสื่อสารระหว่างคอมพิวเตอร์จำนวนตั้งแต่สองเครื่องขึ้นไป
+              เพื่อสะดวกต่อการร่วมใช้ข้อมูล, โปรแกรม หรือเครื่องพิมพ์
+              และยังสามารถอำนวยความสะดวกในการติดต่อแลกเปลี่ยนข้อมูล
+              ระหว่างเครื่องได้ตลอดเวลา
+              การที่ระบบเครือข่ายมีบทบาทสำคัญมากขึ้นในปัจจุบัน
+              เพราะมีการใช้งานคอมพิวเตอร์อย่างแพร่หลายจึงเกิดความต้องการที่จะเชื่อมต่อคอมพิวเตอร์เหล่านั้นถึงกัน
+              การโอนย้ายข้อมูลระหว่างกันในเครือข่ายทำให้ระบบมีขีดความสามารถเพิ่มมากขึ้น
+              การแบ่งการใช้ทรัพยากร เช่น หน่วยประมวลผล , หน่วยความจำ,
+              หน่วยจัดเก็บข้อมูล,โปรแกรมคอมพิวเตอร์ และอุปกรณ์ต่าง ๆ
+              ที่มีราคาแพงและไม่ สามารถจัดหามาให้ทุกคนได้ เช่น เครื่องพิมพ์
+              เครื่องสแกนเนอร์ ทำให้ลดต้นทุนของระบบลงได้
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3 box">
+          <div class="row header p-2">
+            <h5 style="margin: 0">Date: 14/10/2019</h5>
+          </div>
+          <div class="row message p-3">
+            <h5>การเขียนโปรแกรมเชิงวัตถุ</h5>
+            <p>
+              การเขียนโปรแกรมเชิงวัตถุ (อังกฤษ: Object-oriented programming,
+              OOP) คือหนึ่งในรูปแบบการเขียนโปรแกรมคอมพิวเตอร์ ที่ให้ความสำคัญกับ
+              วัตถุ ซึ่งสามารถนำมาประกอบกันและนำมาทำงานรวมกันได้
+              โดยการแลกเปลี่ยนข่าวสารเพื่อนำมาประมวลผลและส่งข่าวสารที่ได้ไปให้
+              วัตถุ อื่นๆที่เกี่ยวข้องเพื่อให้ทำงานต่อไป
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 box">
+          <div class="row header p-2">
+            <h5 style="margin: 0">Date: 20/12/2019</h5>
+          </div>
+          <div class="row message p-3">
+            <h5>โครงสร้างข้อมูล (Data Structure)</h5>
+            <p>
+              โครงสร้างข้อมูล คือความสัมพันธ์ระหว่างข้อมูลที่อยู่ในโครงสร้างนั้น
+              ๆ รวมทั้งกระบวนการในการจัดการข้อมูลในโครงสร้าง หรือ
+              การจัดเตรียมรูปแบบการเก็บข้อมูลในหน่วยความจำอย่างมีระเบียบแบบแผนการแทนข้อมูลให้อยู่ในรูปแบบที่ถูกต้อง
+              ตลอดจนกรรมวิธีการเข้าถึงข้อมูลในโครงสร้างให้เป็นไปอย่างมีประสิทธิภาพ
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center p-3">
+        <div class="col-md-4 text-center">
+          <label>code color: </label>
+          <input type="text" id="codeColor" placeholder="#ffc106" />
+          <br />
+          <button
+            class="btn btn-dark btn-block mt-2"
+            type="submit"
+            onclick="changecolor()"
+          >
+            Change color
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

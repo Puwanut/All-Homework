@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4-4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="table" style="width: 600px">
+
+    </div>
+
+    <script>
+        let parent = document.getElementById("table");
+        for (let i = 1; i <= 64; i++) {
+            let divtag = document.createElement("div");
+            divtag.className = "box";
+            divtag.innerHTML = i;
+            divtag.style.background = "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");
+            parent.appendChild(divtag);
+        }
+    </script>
+
+</body>
+
+</html>

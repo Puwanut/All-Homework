@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab4-report</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="javascript.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#CollapseNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="CollapseNavbar">
+      <a class="navbar-brand" href="index.html" style="color: lime">Node.js</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="information.html">Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="instruction.html">Instruction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="example.html">Example</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <div class="container" style="margin: 50px auto;">
+    <div class="row">
+      <div class="col-md-12 p-5" style="padding: 0%">
+        <h3>ABOUT Node.js</h3>
+        <br>
+        <p>
+          <strong>Node.js</strong> คือ JavaScript runtime สร้างบน Chrome’s V8 JavaScript engine โดย Node.js ใช้
+          event-driven, non-blocking I/O model ทำให้มันเบาเครื่องและมีประสิทธิภาพสูง
+          <br>
+        <div class="codeblock">
+          <code>NODE.JS = Runtime Environment + JavaScript Library</code>
+        </div>
+        <br>
+        เมื่อนำ Runtime Environment มาบวกกับ JavaScript Library ทำให้เราสามารถนำมาประยุกต์สร้าง Application ต่างๆ
+        ได้ไม่ว่าจะเป็นระบบ Streaming, Online Chat, Web, Web Service, IOT และอื่นๆ
+        <br><br>
+        <strong>Node.js</strong> มี Library ที่เป็นส่วนเสริมจำนวนมาก แยกเป็น JavaScript Module ต่างๆ สำหรับทำงานเฉพาะ
+        ในแต่ละเรื่องสามารถติดตั้งเพิ่มเติมได้ง่ายผ่าน npm (Node Package Manager)
+        <br><br>
+        <strong>Npm (Node Package Manager)</strong> เป็นตัวจัดการ Package ของ JavaScript คุณสามารถหา Package
+        ที่เหมาะสมกับงานแต่ละอย่างได้ที่นี้ <a href="https://www.npmjs.com">https://www.npmjs.com</a>
+        และติดตั้งผ่านคำสั่งบน command line ได้เลย
+        </p>
+        <br>
+
+        <h5><b>ทำไมถึงต้องใช้ Node.js ?</b></h5>
+        <div class="highlight_box">
+          <h6 style="margin: 0">Node.js ใช้การเขียนโปรแกรมแบบ <b>Asynchronous!</b></h6>
+        </div>
+        <p>งานทั่วไป (Common task) สำหรับ Web Server สามารถเปิดไฟล์บน Server และส่งคืนเนื้อหาไปยัง Client ได้
+          <br>นี่คือวิธีที่ <b>PHP หรือ ASP</b> จัดการคำขอไฟล์
+        </p>
+        <ol>
+          <li>ส่งงานไปยังระบบไฟล์ของคอมพิวเตอร์</li>
+          <li>รอในขณะที่ระบบไฟล์เปิดขึ้นและอ่านไฟล์</li>
+          <li>ส่งคืนเนื้อหาไปยังไคลเอนต์</li>
+          <li>พร้อมจัดการตามคำขอต่อไป</li>
+        </ol>
+        <p>นี่คือวิธีที่ <b>Node.js</b> จัดการคำขอไฟล์:</p>
+        <ol>
+          <li>ส่งงานไปยังระบบไฟล์ของคอมพิวเตอร์</li>
+          <li>พร้อมจัดการตามคำขอต่อไป</li>
+          <li>เมื่อระบบไฟล์เปิดและอ่านไฟล์เซิร์ฟเวอร์จะส่งคืนเนื้อหาไปยังไคลเอ็นต์</li>
+        </ol>
+        <p><b>Node.js</b> ช่วยลดการรอและดำเนินการตามคำขอถัดไป
+          <br>
+          <b>Node.js</b> รันแบบ single-thread ไม่ปิดกั้นการเขียนโปรแกรมแบบ Asynchronous
+          ซึ่งเป็นการบริหารหน่วยความจำที่มีประสิทธิภาพมาก
+        </p>
+
+        <br>
+        <h5><b>Node.js สามารถทำอะไรได้บ้าง ?</b></h5>
+        <ul>
+          <li>Node.js สามารถสร้างเนื้อหาเพจแบบ Dynamic</li>
+          <li>Node.js สามารถสร้าง, เปิด, อ่าน, เขียน, ลบ, และปิดไฟล์บน Server</li>
+          <li>Node.js สามารถรวบรวมข้อมูลแบบฟอร์ม</li>
+          <li>Node.js สามารถเพิ่ม, ลบ, แก้ไขข้อมูลในฐานข้อมูลได้</li>
+        </ul>
+
+        <br>
+        <h5><b>Node.js เอาไปต่อยอดอะไรได้บ้าง ?</b></h5>
+        <ul>
+          <li> สร้าง Mobile App แบบข้ามระบบ iOS และ Android ได้ โดยใช้เครื่องมือที่ชื่อว่า PhoneGap/Cordova หรือ Ionic
+            Framework </li>
+          <li>สร้างฝั่ง Web Server โดยใช้ Framework อย่าง MEAN Stack หรือ Meteor</li>
+          <li>สร้างระบบฝั่ง IoT โดยใช้ Particle ที่ชื่อเดิมคือ Spark JS, Cylon JS, หรือ Johny Five</li>
+        </ul>
+
+        <br>
+
+        <h5><b>ข้อดีของ Node.js</b></h5>
+        <ul>
+          <li> มีการทำงานแบบ Event-Driven และ Asynchronous (ไม่ต้องรอการทำงานคำสั่งอื่นที่ใช้เวลานานให้เสร็จก่อน
+            สามารถไปทำงานคำสั่งถัดไปก่อนได้เลย)</li>
+          <li> รองรับ Concurrent ได้จำนวนมาก</li>
+          <li> เหมาะกับการทำ Web แบบ Real time</li>
+          <li> ประหยัดทรัพยากรในการทำงาน</li>
+          <li> มีการประมวลผลที่รวดเร็ว</li>
+          <li> เรียนรู้ง่าย เนื่องจาก Syntax ที่ใช้คือ JavaScript</li>
+        </ul>
+
+        <br>
+      </div>
+    </div>
+
+
+  </div>
+  <footer>
+    Copyright © 2020. By Puwanut Janmee 62070154.
+  </footer>
+
+</body>
+
+</html>

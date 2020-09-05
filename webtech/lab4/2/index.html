@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab4-2</title>
+  </head>
+  <body>
+    <p>
+      <label>Value 1: </label>
+      <input id="value1" />
+    </p>
+
+    <p>
+      <label>Value 2: </label>
+      <input id="value2" />
+    </p>
+
+    <button type="button" onclick="calculate()">Calculate</button>
+    <p id="result">Result:</p>
+
+    <script>
+      function calculate() {
+        let val1 = parseInt(document.getElementById("value1").value);
+        let val2 = parseInt(document.getElementById("value2").value);
+        let sum = val1 + val2;
+        document.getElementById("result").innerHTML = "Result: " + sum;
+
+        let ptag = document.createElement("p");
+        let txt = document.createTextNode(val1 + " + " + val2 + " = " + sum);
+        ptag.appendChild(txt);
+        document.body.appendChild(ptag);
+      }
+    </script>
+  </body>
+</html>

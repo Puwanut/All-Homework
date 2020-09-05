@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 94vh;
+}
+
+.box {
+    width: 71px;
+    margin: 1px;
+    padding: 30.5px 0;
+    color: white;
+    border: 1px solid black;
+    background: red;
+    display: inline-block;
+    text-align: center;
+}
